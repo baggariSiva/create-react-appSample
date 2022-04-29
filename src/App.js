@@ -9,9 +9,8 @@ const App = () => {
   const [ip, setIP] = useState("?");
 
   useEffect(() => {
+    const interval = setInterval(() => getLatency(), 1000);
     (async function () {
-      const interval = setInterval(() => getLatency(), 1000);
-
       if (localStorage.getItem("visitorInfos") == null) {
         var visitorInfos = null;
         await fetch("https://ipinfo.io/json")
@@ -34,6 +33,10 @@ const App = () => {
           : "?"
       );
     })();
+
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   /**
