@@ -61,7 +61,7 @@ const App = () => {
       </header>
       <div className="app-body">
         <div className="app-heading" style={{ marginBottom: "40px" }}>
-          <h1>Welcome to Elestio</h1>
+          <h1>Welcome to Elestio - ReactJS</h1>
           <h4>Deploy your apps quickly with the easiest CI/CD system</h4>
         </div>
 
