@@ -95,7 +95,7 @@ const App = () => {
 
         <div className="app-deploy">
           <a
-            href="https://dash.elest.io/deploy?source=cicd&social=Github&url=https://github.com/elestio-examples/reactjs"
+            href="https://dash.elest.io/deploy?source=cicd&social=Github&url=https://github.com/elestio-examples/create-react-app"
             className="btn mb-10-m btn-try"
             target={"_blank"}
           >
